@@ -9,7 +9,7 @@ repeat until application "Spotify" is not running
 			set current_artist to artist of current track
 			set current_album to album of current track
 
-			set message to current_artist & " -  " & track_link & " - "
+			set message to current_artist & " -  " & current_track & " | " & track_link & " - "
 			set encodedMessage to urlencode(message) of me
 			
 			do shell script "curl -sS -d 'auth_token=AUTHTOKEN&room_id=ROOMID&from=Spotify&color=yellow&message=" & message & "' https://api.hipchat.com/v1/rooms/message"
