@@ -17,3 +17,9 @@ Open up in applescript, hit play. Open spotify.
 Play music.
 
 Enjoy.
+
+To automate in the background:
+chatspotify=/Applications/spotify-hipchat.app/Contents/MacOS/applet
+duplicate the applescript
+then save as an application to /Applications
+then run that alias
